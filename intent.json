@@ -1,0 +1,78 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day","Sup","What's up?", "I'm bored"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?","Do you want to read a book?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through different genres of book", "What book do you want to read?","Do you have any genre you like?"],
+         "context": [""]
+        },
+        {"tag": "Thriller",
+         "patterns": ["Can you suggest me a thriller book?","Thriller" , "Crime","Mystery", "Can you suggest more?","No not this"],
+         "responses": ["Magma by Thora Hjörleifsdóttir", "Rabbits by Terry Miles", "Fragile by Sarah Hilary", "Sixteen Horses by Greg Buchanan"],
+         "context": [""]
+        },
+        {"tag": "Horror",
+         "patterns": ["Can you suggest a horror book","scary","horror book","No some other book please" ],
+         "responses": ["Frankenstein by Mary Wollstonecraft Shelley", "Dracula","Young Goodman Brown","Carmila","The Tell-Tale Heart"],
+         "context": [""]
+        },
+        {"tag": "Romance",
+         "patterns": ["I want to read a romance book", "romance", "love", "sweet" ],
+         "responses": ["Pride and Prejudice by Jane Austen","Outlander by Diana Gabaldon.","Jane Eyre by Charlotte Brontë","Gone with the Wind by Margaret Mitchell","Sense and Sensibility by Jane Austen.","The Notebook by Nicholas Sparks.","Whitney, My Love by Judith McNaught.","A Knight Shining Armor by Jude Deveraux."],
+
+         "context": ["suggest_book_romance"]
+        },
+        {"tag": "History ",
+         "patterns": ["Can you suggest history", "history"],
+         "responses": ["Guns, Germs, and Steel: The Fate of Human Societies. ...",
+"Genghis Khan and the Making of the Modern World. ...",
+"Leningrad: The Epic Siege of World War II, 1941-1944. ...",
+"Embers of War: The Fall of an Empire and the Making of America's Vietnam",
+"Rites of Spring: the Great War and the Birth of the Modern Age"],
+         "context": [""]
+        },
+        {"tag": "pharmacy_search",
+         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+         "responses": ["Please provide pharmacy name"],
+         "context": ["search_pharmacy_by_name"]
+        },
+        {"tag": "search_pharmacy_by_name",
+         "patterns": [],
+         "responses": ["Loading pharmacy details"],
+         "context": [""]
+        },
+        {"tag": "hospital_search",
+         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+         "responses": ["Please provide hospital name or location"],
+         "context": ["search_hospital_by_params"]
+        },
+        {"tag": "search_hospital_by_params",
+         "patterns": [],
+         "responses": ["Please provide hospital type"],
+         "context": ["search_hospital_by_type"]
+        },
+        {"tag": "search_hospital_by_type",
+         "patterns": [],
+         "responses": ["Loading hospital details"],
+         "context": [""]
+        }
+   ]
+}
